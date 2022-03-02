@@ -1,3 +1,15 @@
 html{
     --white: #fff; 
+    --Bage: #F3E6D1; 
+    --orange: #DD4B1B;
+
+
+}
+body {
+    background: #fff;
+    font-family:, 'Karla', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 43;
 }
