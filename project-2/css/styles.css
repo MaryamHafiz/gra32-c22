@@ -1,15 +1,17 @@
-html {
+html{
     --gray: #444;
-    --gray-dark: #333; 
-    --gray-light: #f2f2f2; 
+    --gray-dark: #333;
+    --gray-light: #f2f2f2;
 }
 
-body {
-     font-family: 'Libre Franklin', Helvetica, Arial, san-serif;
+body{
+    font-family: 'Karla', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1 {
-    color: #fff; 
+    color: var(--gray-light); 
     font-size: 18px ;
     font-weight: 300;
     letter-spacing: 1px;
@@ -40,12 +42,12 @@ p {
 }
 
 header {
-    background-color: ver(--gray-dark);
-    padding: 1rem 0
+    background-color: var(--gray-dark);
+    padding: 1rem 0;
 }
 
 .overview {
-    background-color: var (--gray);
+    background-color: var(--gray);
     color: #fff; 
     padding: 4rem 0; 
 }
