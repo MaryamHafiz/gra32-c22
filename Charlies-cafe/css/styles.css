@@ -19,6 +19,23 @@ body {
     padding-bottom: 2rem;
   }
 
+  .footer{
+      background-color: #DD4B1B;
+      display: flex;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+  .fab{
+      color: #fff;
+  }
+
+  .header{ 
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding-right: 2rem;
+}
+
 h1 {
     color: var(--orange);
     font-size: 30px;
@@ -39,25 +56,21 @@ h2 {
     grid-template-columns: [full-start] minmax(4rem,4fr)[main-start] minmax(0,1280px) [main-end] minmax(4rem,4fr) [full-end];
 }
 
-.header{ 
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-    padding-right: 4rem;
-
-}
 
 .logo{
     max-width: 93px;
+    padding-left: 2rem;
 
 }
 .grid > * {
     grid-column: main;
 }
 
-header {
+.header {
     background-color: var(--white);
     padding: 1rem 4.5rem;
+    font-size: 18px;
+    color:#DD4B1B 
 }
 
 .overview{
@@ -69,6 +82,8 @@ header {
 .menu{
     background-color: #F3E6D1;
     display: grid;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 
 }
 
@@ -77,7 +92,6 @@ header {
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-top: 4rem;
     padding-left: 1rem;
     
 }
@@ -106,16 +120,15 @@ table {
   
   
   .price {
-    font-weight: bold;
+    font-weight:medium;
   }
 
   .Locationgrid {
       background-color: #fff;
       font-size: 30;
       font-weight: bold;
-      padding-left: 1rem;
-      padding-bottom: 4rem;
-      padding-top: 6rem;
+      padding-left: 2rem;
+      padding-top: 2rem;
   }
 
 header p {
@@ -125,4 +138,12 @@ header p {
 
 .lologo{
     max-width: 393.89px;
+    padding-top: 2rem;
+}
+
+.info{
+    font-size: 18px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
