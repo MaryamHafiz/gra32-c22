@@ -7,14 +7,122 @@ html{
 }
 body {
     background: #fff;
-    font-family:, 'Karla', Arial, Helvetica, sans-serif;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
+
+.drinks {
+    color: var(--orange);
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
 
 h1 {
+    color: var(--orange);
+    font-size: 30px;
     font-weight: 43;
+    letter-spacing: 1px;
+    
+    
 }
-
+h2 {
+    color: var(--orange);
+    font-size: 30px;
+    font-weight: 60;
+    padding-top: 4rem;
+    padding-left: 1rem;
+}
 .grid {
     display: grid;
-    grid-template-columns: [full-start] minmax(1rem,1fr)[main-start] minmax(0,1300px) [main-end] minmax(1rem,1fr) [full-end];
+    grid-template-columns: [full-start] minmax(4rem,4fr)[main-start] minmax(0,1280px) [main-end] minmax(4rem,4fr) [full-end];
+}
+
+.header{ 
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding-right: 4rem;
+
+}
+
+.logo{
+    max-width: 93px;
+
+}
+.grid > * {
+    grid-column: main;
+}
+
+header {
+    background-color: var(--white);
+    padding: 1rem 4.5rem;
+}
+
+.overview{
+    background-color: var(--white);
+    padding: 4rem 0;
+    font-size: 37px;
+}
+
+.menu{
+    background-color: #F3E6D1;
+    display: grid;
+
+}
+
+.menutop{
+    color: var(--orange);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 4rem;
+    padding-left: 1rem;
+    
+}
+
+table {
+    width: 100%;
+  }
+  
+  tr {
+    border-bottom: 1px solid black;
+  }
+  
+  th {
+    padding: 4rem;
+    text-align: left;
+  }
+  
+  td {
+    padding: 1rem;
+    font-size: 18px;
+  }
+  
+  .price {
+    font-size: 18px;
+  }
+  
+  
+  .price {
+    font-weight: bold;
+  }
+
+  .Locationgrid {
+      background-color: #fff;
+      font-size: 30;
+      font-weight: bold;
+      padding-left: 1rem;
+      padding-bottom: 4rem;
+      padding-top: 6rem;
+  }
+
+header p {
+    padding-right: 2rem;
+    padding-left: 4rem;
+}
+
+.lologo{
+    max-width: 393.89px;
 }
