@@ -11,8 +11,9 @@ body {
 }
 
 .coffee {
-    max-width: 1300px;
-    min-width: 390px;
+    (max-width: 1300px;)
+    (min-width: 390px;)
+
 }
 .drinks {
     color: var(--orange);
@@ -23,31 +24,53 @@ body {
     padding-bottom: 2rem;
   }
 
-  .footer{
+.footer{
       background-color: #DD4B1B;
       display: flex;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-  }
+      text-align: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      column-gap: 20px;
+      justify-content: space-evenly;
+      size: 40px;
+}
+
 .fab{
       color: #fff;
-  }
+      display: flex;
+      text-align: center;
+      column-gap: 20px;
+ }
+ .header{
+    background-color: var(--white);
+    padding: 4 rem;
+    font-size: 18px;
+    color:#DD4B1B 
+    display: grid;
+}
 
 .header{ 
     display: flex;
-    align-items: center;
-    margin: 1rem;
+    align-items: left;
+    margin: 2rem;
     padding-right: 2rem;
+    padding-right: 2rem;
+}
+
+header p {
+    padding-right: 2rem;
+    padding-left: 4rem;
 }
 
 h1 {
     color: var(--orange);
     font-size: 30px;
     font-weight: 43;
-    letter-spacing: 1px;
-    
-    
+    letter-spacing: 1px;    
 }
+
 h2 {
     color: var(--orange);
     font-size: 30px;
@@ -55,27 +78,21 @@ h2 {
     padding-top: 4rem;
     padding-left: 1rem;
 }
+
 .grid {
     display: grid;
     grid-template-columns: [full-start] minmax(4rem,4fr)[main-start] minmax(0,1280px) [main-end] minmax(4rem,4fr) [full-end];
 }
 
-
 .logo{
     max-width: 93px;
     padding-left: 2rem;
-
 }
+
 .grid > * {
     grid-column: main;
 }
 
-.header {
-    background-color: var(--white);
-    padding: 1rem 4.5rem;
-    font-size: 18px;
-    color:#DD4B1B 
-}
 
 .overview{
     background-color: var(--white);
@@ -97,7 +114,7 @@ h2 {
     font-weight: bold;
     letter-spacing: 1px;
     padding-left: 1rem;
-    
+    padding-bottom: 2rem;
 }
 
 table {
@@ -131,10 +148,6 @@ td {
       padding-top: 2rem;
   }
 
-header p {
-    padding-right: 2rem;
-    padding-left: 4rem;
-}
 
 .lologo{
     max-width: 393.89px;
@@ -154,5 +167,7 @@ header p {
         display: grid;
         grid-gap: 3rem;
         grid-template-columns: 1fr 1fr;
+        max-width: 1300px;
+        min-width: 390px;
     }
 }
