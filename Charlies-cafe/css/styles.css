@@ -12,7 +12,7 @@ body{
 .coffee {
     max-width:1300px;
     min-width:390px;
-    display:flex 
+    display:flex; 
 }
 
 .cups {
@@ -176,8 +176,9 @@ td {
     display:none;
 }
 
-.header i{
+.locheader{
     display:none;
+    margin-left: auto;
 }
 
 .imglo {
@@ -197,7 +198,8 @@ td {
         display: block;
 
     }
-    .header i{
+
+    .locheader{
         font-size: 27;
         display: block;
         display: grid;
