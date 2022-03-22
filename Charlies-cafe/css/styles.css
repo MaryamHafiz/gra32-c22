@@ -10,9 +10,9 @@ body{
 }
 
 .coffee {
-    max-width:1300px;
-    min-width:390px;
-    display:flex; 
+    /* max-width:1300px;
+    min-width:390px; */
+    display:grid; 
 }
 
 .cups {
@@ -196,7 +196,6 @@ td {
     .footer p{
         font-size: 38px;
         display: block;
-
     }
 
     .locheader{
@@ -208,6 +207,9 @@ td {
     }
     .info p{
         font-size: 30px;
+    }
+    .coffee {
+        max-width: fit-content;
     }
     .cups{
         max-width: fit-content;
