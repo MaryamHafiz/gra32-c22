@@ -40,6 +40,10 @@ body{
     justify-content: space-between;
 }
 
+.footer p{
+    display:none;
+}
+
 .fab{
       color: #fff;
       display: flex;
@@ -51,9 +55,6 @@ body{
     padding: 2rem;
     font-size: 20px;
     color:#DD4B1B 
-}
-.push{
-    margin-left: auto;
 }
 
 .header{ 
@@ -67,6 +68,7 @@ body{
 header p{
     padding-right: 2rem;
     padding-left: 4rem;
+    font-size: 43px;
 }
 
 h1{
@@ -89,20 +91,14 @@ h2 {
     grid-template-columns: [full-start] minmax(4rem,4fr)[main-start] minmax(0,1280px) [main-end] minmax(4rem,4fr) [full-end];
 }
 
-.logo{
-    max-width: 93px;
-    padding-left: 2rem;
-}
-
 .grid > * {
     grid-column: main;
 }
 
 
-.overview {
-    background-color: var(--white);
-    padding: 4rem 0;
-    font-size: 37px;
+.logo{
+    max-width: 93px;
+    padding-left: 2rem;
 }
 
 .menu {
@@ -120,6 +116,16 @@ h2 {
     letter-spacing: 1px;
     padding-left: 2rem;
     padding-bottom: 2rem;
+}
+
+.overview {
+    background-color: var(--white);
+    padding: 4rem 0;
+    font-size: 37px;
+}
+
+.push{
+    margin-left: auto;
 }
 
 table {
@@ -171,8 +177,11 @@ td {
     padding-bottom:2rem;
 }
 
-.footer p{
-    display:none;
+.imglo {
+    display: block;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .locheader{
@@ -180,15 +189,11 @@ td {
     margin-left: auto;
 }
 
-.imglo {
-    display: block;
-}
-
 @media  screen and (min-width: 800px) {
     .two-column{
         display: grid;
         grid-gap: 3rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         max-width: 1300px;
         min-width: 390px;
     }
@@ -198,7 +203,7 @@ td {
     }
 
     .locheader{
-        font-size: 27;
+        font-size: 27px;
         display: block;
         display: grid;
         margin-left: auto;
@@ -211,11 +216,14 @@ td {
     .coffee {
         max-width: 1550px;
     }
-    .cups{
+    .cups {
         max-width: 1550px;
         display: grid;
     }
-    .imglo{
+    .imglo {
         max-width: fit-content;
     }
+    .logo {
+        min-width: 93px;
+        max-width: 250px;
 }
