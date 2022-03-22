@@ -1,20 +1,24 @@
 html{
-    --white: #fff; 
-    --Bage: #F3E6D1; 
-    --orange: #DD4B1B;
-
-
+    --white:#fff; 
+    --Bage:#F3E6D1; 
+    --orange:#DD4B1B;
 }
-body {
-    background: #fff;
-    font-family: 'Karla', Arial, Helvetica, sans-serif;
+
+body{
+    background:#fff;
+    font-family:'Karla', Arial, Helvetica, sans-serif;
 }
 
 .coffee {
-    (max-width: 1300px;)
-    (min-width: 390px;)
-
+    max-width:1300px;
+    min-width:390px;
+    display:flex 
 }
+
+.cups {
+    display:none;
+}
+
 .drinks {
     color: var(--orange);
     font-size: 30px;
@@ -22,33 +26,34 @@ body {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
-  }
+}
 
 .footer{
-      background-color: #DD4B1B;
-      display: flex;
-      text-align: center;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-top: 4rem;
-      padding-bottom: 4rem;
-      column-gap: 20px;
-      justify-content: space-evenly;
-      size: 40px;
+    background-color: #DD4B1B;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    justify-content: space-between;
 }
 
 .fab{
       color: #fff;
       display: flex;
       text-align: center;
-      column-gap: 20px;
  }
+
  .header{
     background-color: var(--white);
-    padding: 4 rem;
-    font-size: 18px;
+    padding: 2rem;
+    font-size: 20px;
     color:#DD4B1B 
-    display: grid;
+}
+.push{
+    margin-left: auto;
 }
 
 .header{ 
@@ -59,12 +64,12 @@ body {
     padding-right: 2rem;
 }
 
-header p {
+header p{
     padding-right: 2rem;
     padding-left: 4rem;
 }
 
-h1 {
+h1{
     color: var(--orange);
     font-size: 30px;
     font-weight: 43;
@@ -94,13 +99,13 @@ h2 {
 }
 
 
-.overview{
+.overview {
     background-color: var(--white);
     padding: 4rem 0;
     font-size: 37px;
 }
 
-.menu{
+.menu {
     background-color: #F3E6D1;
     display: grid;
     padding-bottom: 2rem;
@@ -108,12 +113,12 @@ h2 {
 
 }
 
-.menutop{
+.menutop {
     color: var(--orange);
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -125,6 +130,9 @@ table {
     border-bottom: 1px solid black;
   }
   
+  td:first-child {
+      width: 80%;
+  }
   
 td {
     padding: 1rem;
@@ -138,15 +146,17 @@ td {
   
 .price {
     font-weight:medium;
-  }
+}
 
-.Locationgrid {
+.locationgrid {
       background-color: #fff;
       font-size: 30;
       font-weight: bold;
       padding-left: 2rem;
+      padding-right: 2rem;
       padding-top: 2rem;
-  }
+      padding-bottom: 2rem;
+}
 
 
 .lologo{
@@ -155,19 +165,52 @@ td {
 }
 
 .info{
+    display:grid;
+    font-size:18px;
+    padding-top:2rem;
+    padding-left:2rem;
+    padding-bottom:2rem;
+}
+
+.footer p{
+    display:none;
+}
+
+.header i{
+    display:none;
+}
+
+.imglo {
     display: grid;
-    font-size: 18px;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
 }
 
 @media  screen and (min-width: 800px) {
-    .two-column {
+    .two-column{
         display: grid;
         grid-gap: 3rem;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 1300px;
         min-width: 390px;
+    }
+    .footer p{
+        font-size: 38px;
+        display: block;
+
+    }
+    .header i{
+        font-size: 27;
+        display: block;
+        display: grid;
+        margin-left: auto;
+        display: flex;
+    }
+    .info p{
+        font-size: 30px;
+    }
+    .cups{
+        max-width: fit-content;
+    }
+    .imglo{
+        max-width: fit-content;
     }
 }
