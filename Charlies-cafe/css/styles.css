@@ -181,7 +181,7 @@ td {
 }
 
 .imglo {
-    display: grid;
+    display: block;
 }
 
 @media  screen and (min-width: 800px) {
@@ -206,12 +206,14 @@ td {
     }
     .info p{
         font-size: 30px;
+        font-weight: medium;
     }
     .coffee {
-        max-width: fit-content;
+        max-width: 1550px;
     }
     .cups{
-        max-width: fit-content;
+        max-width: 1550px;
+        display: grid;
     }
     .imglo{
         max-width: fit-content;
