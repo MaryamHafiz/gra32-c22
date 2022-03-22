@@ -10,8 +10,8 @@ body{
 }
 
 .coffee {
-    /* max-width:1300px;
-    min-width:390px; */
+    /* max-width:1300px; */
+    /* min-width:390px; */
     display:grid; 
 }
 
@@ -157,7 +157,6 @@ td {
       padding-top: 2rem;
       padding-bottom: 2rem;
 }
-
 
 .lologo{
     max-width: 393.89px;
