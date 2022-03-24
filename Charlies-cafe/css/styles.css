@@ -10,9 +10,9 @@ body{
 }
 
 .coffee {
-    /* max-width:1300px; */
-    /* min-width:390px; */
-    display:grid; 
+    /* max-width:fit-content;
+    min-width:fit-content; */
+    display:block; 
 }
 
 .cups {
@@ -42,6 +42,7 @@ body{
 
 .footer p{
     display:none;
+
 }
 
 .fab{
@@ -50,25 +51,22 @@ body{
       text-align: center;
  }
 
- .header{
+ .header {
     background-color: var(--white);
     padding: 2rem;
     font-size: 20px;
-    color:#DD4B1B 
-}
-
-.header{ 
+    color:#DD4B1B;
     display: flex;
     align-items: left;
     margin: 2rem;
-    padding-right: 2rem;
-    padding-right: 2rem;
+
 }
+
+
 
 header p{
     padding-right: 2rem;
-    padding-left: 4rem;
-    font-size: 43px;
+    padding-left: 2rem;
 }
 
 h1{
@@ -97,8 +95,8 @@ h2 {
 
 
 .logo{
-    max-width: 93px;
-    padding-left: 2rem;
+    max-width: 100px;
+    padding-right: 2rem;
 }
 
 .menu {
@@ -126,7 +124,7 @@ h2 {
 
 .push{
     margin-left: auto;
-}
+    }
 
 table {
     width: 100%;
@@ -142,24 +140,22 @@ table {
   
 td {
     padding: 1rem;
-    font-size: 18px;
+    font-size: 22px;
   }
   
 .price {
-    font-size: 18px;
-  }
-  
-  
-.price {
+    font-size: 22px;
     font-weight:medium;
-}
+
+  }
+
 
 .locationgrid {
       background-color: #fff;
       font-size: 30;
       font-weight: bold;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      /* padding-left: 2rem; */
+      /* padding-right: 2rem; */
       padding-top: 2rem;
       padding-bottom: 2rem;
 }
@@ -171,17 +167,21 @@ td {
 
 .info{
     display:grid;
-    font-size:18px;
+    font-size:22px;
     padding-top:2rem;
     padding-left:2rem;
     padding-bottom:2rem;
 }
 
-.imglo {
-    display: block;
-    padding-right: 2rem;
+.imgloMobile {
+    display: grid;
+    /* padding-right: 2rem; */
     padding-top: 2rem;
     padding-bottom: 2rem;
+    /* max-width: ; */
+}
+.imglo {
+    display: none;
 }
 
 .locheader{
@@ -197,13 +197,21 @@ td {
         max-width: 1300px;
         min-width: 390px;
     }
+    .footer {
+        /* justify-content: space-evenly; */
+    }
+
+    .footer i{
+        font-size: 3rem;
+    }
     .footer p{
-        font-size: 38px;
+        font-size: 28px;
         display: block;
+        padding-left: 3rem;
     }
 
     .locheader{
-        font-size: 27px;
+        font-size: 43px;
         display: block;
         display: grid;
         margin-left: auto;
@@ -211,19 +219,29 @@ td {
     }
     .info p{
         font-size: 30px;
-        font-weight: medium;
+        font-weight: lighter;
     }
     .coffee {
-        max-width: 1550px;
+        /* max-width: fit-content; */
+        min-width: none;
     }
     .cups {
-        max-width: 1550px;
+        /* max-width: 1550px; */
         display: grid;
     }
     .imglo {
         max-width: fit-content;
+        display: block;
+    }
+    .imgloMobile {
+        display: none;
     }
     .logo {
         min-width: 93px;
         max-width: 250px;
+    }
+    .push {
+        font-size: 43px;
+    }
+
 }
